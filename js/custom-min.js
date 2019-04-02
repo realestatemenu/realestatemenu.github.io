@@ -1,0 +1,1 @@
+$(function(){$(window).resize(function(){var i=$(window).width(),e=$(window).height(),n=e*(16/9),o=i/(16/9);i>1280&&o>e&&$(".background.vimeo iframe").css({width:i,height:o}),e>720&&n>i&&$(".background.vimeo iframe").css({height:e,width:n})}).resize();var i=$(".background.vimeo iframe")[0],e=$f(i);e.addEvent("ready",function(){e.api("setVolume",0)})});
