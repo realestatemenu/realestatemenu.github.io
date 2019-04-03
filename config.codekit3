@@ -9,22 +9,6 @@
 	],
 "creatorBuild": "29156",
 "files": {
-	"/_first-steps.url": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_first-steps.url",
-		"oF": 0
-		},
-	"/_open-generator.url": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_open-generator.url",
-		"oF": 0
-		},
 	"/ajax-email.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -71,6 +55,17 @@
 		"iS": 994118,
 		"oA": 0,
 		"oAP": "/assets/img/REMlogo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/REMlogoBlack.png": {
+		"ft": 32768,
+		"iS": 1225419,
+		"oA": 0,
+		"oAP": "/assets/img/REMlogoBlack.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -280,14 +275,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/manual/manual.url": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/manual/manual.url",
-		"oF": 0
-		},
 	"/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 10652,
@@ -493,7 +480,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 574492859.21287096,
-	"displayValue": "realestatemenu - lander",
+	"displayValue": "realestatemenu.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
