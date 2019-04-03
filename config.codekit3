@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "8BF14651-A038-45D0-B9C7-EACF760760FF"
+		"uuidString": "3B1BB674-22B9-4DA5-A266-2B893283235E"
 		}
 	],
 "creatorBuild": "29156",
@@ -50,22 +50,132 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/REMlogo.png": {
-		"ft": 32768,
-		"iS": 994118,
+	"/assets/img/gallery-60-1.jpg": {
+		"ft": 16384,
+		"iS": 339123,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/img/REMlogo.png",
+		"oAP": "/assets/img/gallery-60-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/gallery-60-2.jpg": {
+		"ft": 16384,
+		"iS": 216771,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/gallery-60-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/gallery-60-3.jpg": {
+		"ft": 16384,
+		"iS": 261932,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/gallery-60-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/gallery-70-1.jpg": {
+		"ft": 16384,
+		"iS": 53680,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/gallery-70-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/assets/img/gallery-70-2.jpg": {
+		"ft": 16384,
+		"iS": 44584,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/gallery-70-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/assets/img/gallery-70-3.jpg": {
+		"ft": 16384,
+		"iS": 49248,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/gallery-70-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/assets/img/icon-16.png": {
+		"ft": 32768,
+		"iS": 4627,
+		"oA": 0,
+		"oAP": "/assets/img/icon-16.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/REMlogoBlack.png": {
-		"ft": 32768,
-		"iS": 1225419,
+	"/assets/img/image-80.jpg": {
+		"ft": 16384,
+		"iS": 572705,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/img/REMlogoBlack.png",
+		"oAP": "/assets/img/image-80.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/image-89-1.jpg": {
+		"ft": 16384,
+		"iS": 697599,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/image-89-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/img/image-89-2.jpg": {
+		"ft": 16384,
+		"iS": 207711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/image-89-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/assets/img/logo_banner.png": {
+		"ft": 32768,
+		"iS": 33563,
+		"oA": 0,
+		"oAP": "/assets/img/logo_banner.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/logo_banner_sidebar.png": {
+		"ft": 32768,
+		"iS": 22073,
+		"oA": 0,
+		"oAP": "/assets/img/logo_banner_sidebar.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -130,6 +240,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/slides-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/slides-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/slides.css": {
 		"aP": 1,
 		"bl": 0,
@@ -137,6 +257,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/slides-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/slides.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/slides.min-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -197,17 +327,6 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0
-		},
-	"/js/custom-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/custom-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/js/custom.js": {
 		"bF": 0,
@@ -413,6 +532,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/slides.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/scss/slides-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/scss/slides.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -479,8 +608,8 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 574492859.21287096,
-	"displayValue": "realestatemenu.github.io",
+	"creationDate": 575979654.42466199,
+	"displayValue": "realestatemenu.github.io2",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0

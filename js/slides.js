@@ -1,7 +1,7 @@
 /*
 
    _____ _       _                 _  _____
-  / ___/| (*)   | |               | |/ ___/  v 4.2
+  / ___/| (*)   | |               | |/ ___/  v 4.2.1
  | (___ | |_  __| | ___ ____      | | (___
   \___ \| | |/ _` |/ _ / __/  _   | |\___ \
   ____) | | | (_| |  __\__ \ | |__| |____) |
@@ -38,6 +38,7 @@ window.enableMobileZoom = 0;
 window.hideOnScrollSensitivity = 100;
 window.allowParallaxOnMobile = 1;
 window.hidePopupOnBodyClick = 1;
+window.disableKeyNavigation = 0;
 
 var $html = $('html');
 
@@ -1007,7 +1008,7 @@ $(document).ready(function() { "use strict";
         scrollTop = $currentSection.scrollTop(),
         finalScroll = scrollTop + parseInt(delta * scrollDistance);
 
-    if (window.window.disableKeyNavigation || e.target.nodeName.toLowerCase() == 'input' || e.target.nodeName.toLowerCase() == 'textarea') {
+    if (window.disableKeyNavigation || e.target.nodeName.toLowerCase() == 'input' || e.target.nodeName.toLowerCase() == 'textarea') {
       return;
     }
 
@@ -1331,7 +1332,7 @@ $(document).ready(function() { "use strict";
             HTML5video = $element.find('video');
 
         if ( iframe.length > 0  ) {
-          var iframeSrc = $(iframe).attr('src'),
+          var iframeSrc = $(iframe).attr('src') ? $(iframe).attr('src') : $(iframe).data('src'),
               symbol = (iframeSrc.indexOf('?') > -1) ? "&" : "?";
 
           $(iframe).attr('src',iframeSrc + symbol + "autoplay=1");

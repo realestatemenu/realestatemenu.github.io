@@ -2,7 +2,7 @@
 /*
 
    _____ _       _              _____  _____ _____
-  / ___/| (•)   | |           / ____// ____/ ____/  v 4.2
+  / ___/| (•)   | |           / ____// ____/ ____/  v 4.2.1
  | (___ | |_  __| | ___ ____ | |    | (___| (___
   \___ \| | |/ _` |/ _ / __/ | |     \___ \ ___ \
   ____) | | | (_| |  __\__ \ | |____ ____) |___) |
@@ -1724,6 +1724,9 @@ html.mobile .showForMobileInline {
   height: 18px;
   vertical-align: bottom;
 }
+.panel img {
+  max-width: none;
+}
 .slides.whiteSlide .panel svg {
   fill: #202020;
 }
@@ -3021,6 +3024,45 @@ html.mobile .showForMobileInline {
 }
 
 .cards.horizontal .slide.before {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+/* CARDS */
+.cards2 .slide,
+.cards2 .slide.after {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  opacity: initial;
+}
+
+.cards2 .slide.after {
+  z-index: 8 !important;
+  opacity: 0;
+}
+
+.cards2 .slide.selected {
+  z-index: 9 !important;
+}
+
+.cards2 .slide.before {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 7;
+}
+
+.cards2 .slide.active.before {
+  z-index: 10 !important;
+}
+
+/* Horizontal */
+.cards2.horizontal .slide,
+.cards2.horizontal .slide.after {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+.cards2.horizontal .slide.before {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -4715,324 +4757,6 @@ h5.uppercase, h5.uppercase {
   font-weight: 700 !important;
 }
 
-html {
-  font-size: 6px;
-  font-weight: 400;
-  color: #202020;
-}
-@media (max-width: 550px) {
-  html {
-    font-size: 5px;
-  }
-}
-@media (min-width: 767px) {
-  html {
-    font-size: 7px;
-  }
-}
-@media (min-width: 1024px) {
-  html {
-    font-size: 6px;
-  }
-}
-
-body {
-  font-size: 15px;
-}
-
-.typography .h1, .typography h1,
-.typography .h2, .typography h2,
-.typography .h3, .typography h3,
-.typography .h4, .typography h4,
-.typography .h5, .typography h5,
-.typography .h6, .typography h6 {
-  font-style: normal;
-  letter-spacing: normal;
-}
-.typography .h1.ultraLight, .typography h1.ultraLight,
-.typography .h2.ultraLight, .typography h2.ultraLight,
-.typography .h3.ultraLight, .typography h3.ultraLight,
-.typography .h4.ultraLight, .typography h4.ultraLight,
-.typography .h5.ultraLight, .typography h5.ultraLight,
-.typography .h6.ultraLight, .typography h6.ultraLight {
-  font-weight: 100;
-}
-.typography .h1.light, .typography h1.light,
-.typography .h2.light, .typography h2.light,
-.typography .h3.light, .typography h3.light,
-.typography .h4.light, .typography h4.light,
-.typography .h5.light, .typography h5.light,
-.typography .h6.light, .typography h6.light {
-  font-weight: 300;
-}
-.typography .h1.normal, .typography h1.normal,
-.typography .h2.normal, .typography h2.normal,
-.typography .h3.normal, .typography h3.normal,
-.typography .h4.normal, .typography h4.normal,
-.typography .h5.normal, .typography h5.normal,
-.typography .h6.normal, .typography h6.normal {
-  font-weight: 400;
-}
-.typography .h1.semiBold, .typography h1.semiBold,
-.typography .h2.semiBold, .typography h2.semiBold,
-.typography .h3.semiBold, .typography h3.semiBold,
-.typography .h4.semiBold, .typography h4.semiBold,
-.typography .h5.semiBold, .typography h5.semiBold,
-.typography .h6.semiBold, .typography h6.semiBold {
-  font-weight: 500;
-  letter-spacing: -0.05em;
-}
-.typography .h1.bold, .typography h1.bold,
-.typography .h2.bold, .typography h2.bold,
-.typography .h3.bold, .typography h3.bold,
-.typography .h4.bold, .typography h4.bold,
-.typography .h5.bold, .typography h5.bold,
-.typography .h6.bold, .typography h6.bold {
-  font-weight: 600;
-  letter-spacing: -0.04em;
-}
-.typography .h1.ultraBold, .typography h1.ultraBold,
-.typography .h2.ultraBold, .typography h2.ultraBold,
-.typography .h3.ultraBold, .typography h3.ultraBold,
-.typography .h4.ultraBold, .typography h4.ultraBold,
-.typography .h5.ultraBold, .typography h5.ultraBold,
-.typography .h6.ultraBold, .typography h6.ultraBold {
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-.typography .h1, .typography h1 {
-  font-size: 8.4rem;
-  line-height: 10rem;
-  margin-top: 8rem;
-  padding-top: 0.0138rem;
-  padding-bottom: 0.9862rem;
-  margin-bottom: 1rem;
-}
-.typography .h1.small, .typography h1.small {
-  font-size: 6.4rem;
-  line-height: 6rem;
-  margin-top: 3rem;
-  padding-top: 0.7248rem;
-  padding-bottom: 0.2752rem;
-  margin-bottom: 2rem;
-}
-.typography .h1.large, .typography h1.large {
-  font-size: 9.6rem;
-  line-height: 10rem;
-  margin-top: 7rem;
-  padding-top: 0.5872rem;
-  padding-bottom: 0.4128rem;
-  margin-bottom: 4rem;
-}
-.typography .h1.huge, .typography h1.huge {
-  font-size: 14.6rem;
-  line-height: 15rem;
-  margin-top: 10rem;
-  padding-top: 0.3097rem;
-  padding-bottom: 0.6903rem;
-  margin-bottom: 3rem;
-}
-.typography .h2, .typography h2 {
-  font-size: 7.4rem;
-  line-height: 8rem;
-  margin-top: 6rem;
-  padding-top: 0.3693rem;
-  padding-bottom: 0.6307rem;
-  margin-bottom: 1rem;
-}
-.typography .h2.small, .typography h2.small {
-  font-size: 5.6rem;
-  line-height: 6rem;
-  margin-top: 4rem;
-  padding-top: 0.0092rem;
-  padding-bottom: 0.9908rem;
-  margin-bottom: -1rem;
-}
-.typography .h2.large, .typography h2.large {
-  font-size: 8.8rem;
-  line-height: 9rem;
-  margin-top: 6rem;
-  padding-top: 0.3716rem;
-  padding-bottom: 0.6284rem;
-  margin-bottom: 1rem;
-}
-.typography .h2.huge, .typography h2.huge {
-  font-size: 11.2rem;
-  line-height: 12rem;
-  margin-top: 8rem;
-  padding-top: 0.0184rem;
-  padding-bottom: 0.9816rem;
-  margin-bottom: 1rem;
-}
-.typography .h3, .typography h3 {
-  font-size: 6.4rem;
-  line-height: 8rem;
-  margin-top: 3rem;
-  padding-top: 0.7248rem;
-  padding-bottom: 0.2752rem;
-  margin-bottom: 0rem;
-}
-.typography .h3.small, .typography h3.small {
-  font-size: 4.8rem;
-  line-height: 6rem;
-  margin-top: 2rem;
-  padding-top: 0.2936rem;
-  padding-bottom: 0.7064rem;
-  margin-bottom: -1rem;
-}
-.typography .h3.large, .typography h3.large {
-  font-size: 8rem;
-  line-height: 10rem;
-  margin-top: 4rem;
-  padding-top: 0.156rem;
-  padding-bottom: 0.844rem;
-  margin-bottom: 0rem;
-}
-.typography .h3.huge, .typography h3.huge {
-  font-size: 9.6rem;
-  line-height: 10rem;
-  margin-top: 5rem;
-  padding-top: 0.5872rem;
-  padding-bottom: 0.4128rem;
-  margin-bottom: 2rem;
-}
-.typography .h4, .typography h4 {
-  font-size: 5.2rem;
-  line-height: 6rem;
-  margin-top: 4rem;
-  padding-top: 0.1514rem;
-  padding-bottom: 0.8486rem;
-  margin-bottom: -1rem;
-}
-.typography .h5, .typography h5 {
-  font-size: 4.4rem;
-  line-height: 6rem;
-  margin-top: 4rem;
-  padding-top: 0.4358rem;
-  padding-bottom: 0.5642rem;
-  margin-bottom: -1rem;
-}
-.typography .h6, .typography h6 {
-  font-size: 4rem;
-  line-height: 4rem;
-  margin-top: 3rem;
-  padding-top: 0.578rem;
-  padding-bottom: 0.422rem;
-  margin-bottom: 0rem;
-}
-.typography p, .typography .p, .typography .p:not(.hero) + p, .typography p:not(.hero) + p {
-  font-size: 3.5rem;
-  line-height: 5rem;
-  margin-top: 0rem;
-  padding-top: 0.25575rem;
-  padding-bottom: 0.74425rem;
-  margin-bottom: 1rem;
-  text-rendering: optimizeLegibility;
-}
-.typography p.micro, .typography .p.micro, .typography .p:not(.hero) + p.micro, .typography p:not(.hero) + p.micro {
-  font-size: 2.6rem;
-  line-height: 4rem;
-  margin-top: 2rem;
-  padding-top: 0.0757rem;
-  padding-bottom: 0.9243rem;
-  margin-bottom: -1rem;
-}
-.typography p.small, .typography .p.small, .typography .p:not(.hero) + p.small, .typography p:not(.hero) + p.small {
-  font-size: 3rem;
-  line-height: 4rem;
-  margin-top: 1rem;
-  padding-top: 0.9335rem;
-  padding-bottom: 0.0665rem;
-  margin-bottom: 0rem;
-}
-.typography p.hero, .typography .p.hero, .typography .p:not(.hero) + p.hero, .typography p:not(.hero) + p.hero {
-  font-size: 5rem;
-  line-height: 6rem;
-  margin-top: 2rem;
-  padding-top: 0.2225rem;
-  padding-bottom: 0.7775rem;
-  margin-bottom: 3rem;
-  font-weight: 300;
-  letter-spacing: -0.16rem;
-}
-.typography strong {
-  font-weight: 600;
-}
-.typography em {
-  font-weight: 500;
-}
-.typography li {
-  font-size: 3.5rem;
-  line-height: 4rem;
-  margin-top: -1rem;
-  padding-top: 0.75575rem;
-  padding-bottom: 0.24425rem;
-  margin-bottom: 1rem;
-  opacity: 0.8;
-}
-.typography ul, .typography ol {
-  margin: 4rem 4rem 4rem 8rem;
-}
-.typography ul li {
-  list-style: disc;
-}
-.typography ol li {
-  list-style: decimal;
-}
-.typography blockquote {
-  font-size: 3.2rem;
-  line-height: 4rem;
-  margin-top: 5rem;
-  padding-top: 0.8624rem;
-  padding-bottom: 0.1376rem;
-  margin-bottom: 5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  opacity: 0.9;
-  border-left: 5px solid #EEE;
-}
-.typography q {
-  font-size: 3.2rem;
-  line-height: 4rem;
-  margin-top: 5rem;
-  padding-top: 0.8624rem;
-  padding-bottom: 0.1376rem;
-  margin-bottom: 6rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  opacity: 0.9;
-  display: block;
-}
-.typography q:before, .typography q:after {
-  font-size: 5rem;
-  line-height: 0.1rem;
-  vertical-align: -1rem;
-}
-.typography q:before {
-  content: "“";
-  margin-right: 1rem;
-}
-.typography q:after {
-  content: "”";
-  margin-left: 1rem;
-}
-
-@media (min-width: 768px) {
-  .article p, .article li {
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 550px) {
-  .article h1, .article .h2, .article .h3, .article h4, .article h5, .article h6 {
-    opacity: 0.8;
-  }
-}
-
 /* Colors */
 .white {
   background: #fff !important;
@@ -5082,7 +4806,7 @@ body {
 
 /* Colors by Google Meterial Design (C) */
 .red {
-  background: #F44336 !important;
+  background: #7F0000 !important;
   color: #fff !important;
 }
 .red svg {
@@ -5090,18 +4814,18 @@ body {
 }
 
 .text-red {
-  color: #F44336 !important;
+  color: #7F0000 !important;
 }
 .text-red.button svg {
-  fill: #F44336 !important;
+  fill: #7F0000 !important;
 }
 
 .stroke.button.red {
-  color: #F44336 !important;
-  border-color: #F44336 !important;
+  color: #7F0000 !important;
+  border-color: #7F0000 !important;
 }
 .stroke.button.red svg {
-  fill: #F44336 !important;
+  fill: #7F0000 !important;
 }
 
 .pink {
@@ -7842,6 +7566,7 @@ p.remind-43 {
 .frame-97 {
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
 }
 .frame-97:last-child {
   border-bottom: none;

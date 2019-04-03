@@ -10,7 +10,10 @@ if($_POST){
   $name = $_POST['name'];
   $email = $_POST['email'];
   $message = $_POST['message'];
-//$phone = $_POST['phone'];
+  //  How to add a new input to the email template:
+  //  1) Use the template below by replacing the "phone" with the value of your <input> name attribute:
+  //  $phone = $_POST['phone'];
+  //  Continue to line #41...
 
 
   /* SUBJECT */
@@ -31,10 +34,12 @@ if($_POST){
   }
 
   /* MESSAGE TEMPLATE */
+  // You will receive an email in the following template:
   $mailBody = "Name: $name \n\r" .
               "Email:  $email \n\r" .
               "Subject:  $subject \n\r" .
-//            "Phone:  $phone \n\r" .
+          //  2) Add the title (Phone: ) and the variable ($phone) for each new <input> of your html template:
+          //  "Phone:  $phone \n\r" .
               "Message: $message";
 
   /* SEND EMAIL */

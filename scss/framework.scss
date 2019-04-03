@@ -1116,7 +1116,6 @@ svg {
 }
 
 
-
 .slide.video .background {
 	overflow: hidden;
 }
@@ -1206,7 +1205,6 @@ html:not(.mobile) .slide.video .background[style] {
 .button.empty.shadow:hover {
 	box-shadow: $large-shadow;
 }
-
 
 .pad {
 	border-radius: 6px;
@@ -1628,6 +1626,10 @@ html.mobile .showForMobileInline {
 		width: 18px;
 		height: 18px;
 		vertical-align: bottom;
+	}
+
+	img {
+		max-width: none;
 	}
 
 	.slides.whiteSlide & svg {
@@ -3119,6 +3121,47 @@ html.mobile .showForMobileInline {
 	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
 }
+
+
+/* CARDS */
+.cards2 .slide,
+.cards2 .slide.after {
+	-ms-transform: translateY(10%);
+	transform: translateY(10%);
+	opacity: initial;
+}
+.cards2 .slide.after {
+	 z-index: 8 !important;
+	 opacity: 0;
+}
+
+.cards2 .slide.selected {
+	 z-index: 9 !important;
+}
+
+.cards2 .slide.before {
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	z-index: 7;
+}
+
+.cards2 .slide.active.before {
+	 z-index: 10 !important;
+}
+
+/* Horizontal */
+.cards2.horizontal .slide,
+.cards2.horizontal .slide.after {
+	-ms-transform: translateX(10%);
+	transform: translateX(10%);
+}
+
+.cards2.horizontal .slide.before {
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+
+
 
 
 
