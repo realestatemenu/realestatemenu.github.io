@@ -4875,7 +4875,7 @@ h5.uppercase, h5.uppercase {
 }
 
 .deepPurple {
-  background: #673AB7 !important;
+  background: #3e0889 !important;
   color: #fff !important;
 }
 .deepPurple svg {
@@ -4883,18 +4883,18 @@ h5.uppercase, h5.uppercase {
 }
 
 .text-deepPurple {
-  color: #673AB7 !important;
+  color: #3e0889 !important;
 }
 .text-deepPurple.button svg {
-  fill: #673AB7 !important;
+  fill: #3e0889 !important;
 }
 
 .stroke.button.deepPurple {
-  color: #673AB7 !important;
-  border-color: #673AB7 !important;
+  color: #3e0889 !important;
+  border-color: #3e0889 !important;
 }
 .stroke.button.deepPurple svg {
-  fill: #673AB7 !important;
+  fill: #3e0889 !important;
 }
 
 .indigo {
