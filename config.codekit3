@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/about-real-estate-menu.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/about-real-estate-menu.html",
+		"oF": 0
+		},
 	"/ajax-email.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -48,6 +56,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/background/rem.jpg": {
+		"ft": 16384,
+		"iS": 6060544,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/background/rem.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/img/gallery-60-1.jpg": {
@@ -180,6 +199,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/mark-frater.jpg": {
+		"ft": 16384,
+		"iS": 18545,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/img/mark-frater.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/svg/icons.svg": {
@@ -405,6 +435,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/REMlogo_transparent.png": {
+		"ft": 32768,
+		"iS": 110629,
+		"oA": 0,
+		"oAP": "/REMlogo_transparent.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/safari-pinned-tab.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -609,7 +650,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 575979654.42466199,
-	"displayValue": "realestatemenu.github.io2",
+	"displayValue": "realestatemenu.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
