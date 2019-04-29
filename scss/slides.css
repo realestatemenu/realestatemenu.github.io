@@ -3709,21 +3709,21 @@ h5.uppercase, h5.uppercase {
     fill: #9C27B0 !important; }
 
 .deepPurple {
-  background: #3e0889 !important;
+  background: #4a1169 !important;
   color: #fff !important; }
   .deepPurple svg {
     fill: #fff !important; }
 
 .text-deepPurple {
-  color: #3e0889 !important; }
+  color: #4a1169 !important; }
   .text-deepPurple.button svg {
-    fill: #3e0889 !important; }
+    fill: #4a1169 !important; }
 
 .stroke.button.deepPurple {
-  color: #3e0889 !important;
-  border-color: #3e0889 !important; }
+  color: #4a1169 !important;
+  border-color: #4a1169 !important; }
   .stroke.button.deepPurple svg {
-    fill: #3e0889 !important; }
+    fill: #4a1169 !important; }
 
 .indigo {
   background: #3F51B5 !important;
