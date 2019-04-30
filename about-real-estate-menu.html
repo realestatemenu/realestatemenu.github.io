@@ -5,21 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
-<script src="https://unpkg.com/tripetto-collector"></script>
-<script src="https://unpkg.com/tripetto-collector-rolling"></script>
+<iframe id="tripetto" style="width: 400px; height: 600px; border: 0;"></iframe>
 <script>
-TripettoCollectorRolling.run({
-    element: document.body,
-    definition: {"name":"About","clusters":[{"id":"119b328ef166a708352f029594169d81507b09fa25b1c07ad640dcb41eaca729","name":"About","nodes":[{"id":"438a0caed975dc9cc32bb201d37509659fda34e18a9a3d900b46c1b9d7bd7cf5","name":"About","description":"Mark started his career in the northern suburbs of London back in March 1984 and has had the opportunity of working in a number of different countries in a range of roles and positions over the last 35 years.","block":{"type":"paragraph","version":"0.0.0","caption":"","imageURL":"https://realestatemenu.com.au/mark-rem.jpg"}},{"id":"22c3f63c232d29264ea0c97a38240fbb48f3097d4e83019d9631ee49e3de005b","name":"About","description":"•\tSales (top 10 for an International brand) \n•\tBusiness Ownership for 11 years with a major franchise brand\n•\tCorporate Roles for 3 major brands (in Australia and New Zealand)\n•\tIndependent national and international trainer, key note speaker and coach\n•\tAuctioneer since 1992","block":{"type":"paragraph","version":"0.0.0","caption":"Since joining one of Brisbane’s most awarded businesses back in April of 1989, Mark has worked in:-"}},{"id":"b2537649703e6647542d842ae2ebebdb118d6236472ac1e5fedc2afc182870ab","explanation":"The selection of services is as broad as Mark’s experience and knowledge, all delivered in an easy to understand and applicable way.","name":"About","description":"Since April of 2012 working with 2 highly awarded brands, Mark is moving back to what he truly loves doing – working with salespeople, offices and companies back in the field in a variety of roles.","block":{"type":"paragraph","version":"0.0.0"}}]}],"editor":{"name":"tripetto","version":"1.1.11"}},
-    progressbar: false,
-    onFinish: function(instance) {
-        // TODO: Handle the collector results
-        // For example retrieve the results as a CSV-file:
-        var csv = TripettoCollector.Export.CSV(instance);
-        // Or retrieve the individual fields:
-        var fields = TripettoCollector.Export.fields(instance);
-    }
-});
+var tripettoElement = document.getElementById("tripetto");
+var tripettoDoc = tripettoElement.contentWindow || tripettoElement.contentDocument.document || tripettoElement.contentDocument;
+tripettoDoc.document.open();
+tripettoDoc.document.write(decodeURI("%3Cbody%3E%3Cscript%20src=%22https://unpkg.com/tripetto-collector%22%3E%3C/script%3E%0A%3Cscript%20src=%22https://unpkg.com/tripetto-collector-rolling%22%3E%3C/script%3E%0A%3Cscript%20src=%22https://unpkg.com/tripetto-services%22%3E%3C/script%3E%0A%3Cscript%3E%0ATripettoServices.init(%7B%20token:%20%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiUFdVVGZJQU5zMW53am5rMzVra0ppMzdoeWVjL0hoalpuOFVWeUF6SlYrOD0iLCJkZWZpbml0aW9uIjoibEwranFtYS9uLzc3TUcyUkU1ODVPaDRSYzR5Z0g3UkRLeHUzTTljYjdrWT0iLCJ0eXBlIjoiY29sbGVjdCJ9.nriRI2dYH1fOLBo7TFC8TKzBUmYf--2LdfObUVBGJro%22%20%7D);%0A%0ATripettoCollectorRolling.run(%7B%0A%20%20%20%20element:%20document.body,%0A%20%20%20%20definition:%20TripettoServices.definition,%0A%20%20%20%20progressbar:%20false,%0A%20%20%20%20onFinish:%20TripettoServices.onFinish%0A%7D);%0A%3C/script%3E%3C/body%3E"));
+tripettoDoc.document.close();
 </script>
 </body>
 </html>
+

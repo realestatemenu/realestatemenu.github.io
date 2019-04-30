@@ -163,7 +163,7 @@
 <!-- Panel Top #library/panel/panel-top-01.html -->
 <nav class="panel top">
   <div class="sections desktop">
-    <div class="left"><a href="#" title="Real Estate Menu"><img src="/assets/img/logo_banner.png" width="40%" border="0"></a></div>
+    <div class="left"><a href="#realestatemenu" title="Real Estate Menu"><img src="/REMlogo.png" width="6%" border="0"></a></div>
     <div class="right">
       <ul class="menu uppercase small">
         <li><a href="#about">About</a></li>
@@ -178,7 +178,7 @@
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Real Estate Menu"><img src="/assets/img/logo_banner.png" width="100%" border="0"></a></div>
+    <div class="left"><a href="#realestatemenu" title="Real Estate Menu"><img src="/REMlogo.png" width="25%" border="0"></a></div>
     <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
@@ -187,7 +187,7 @@
 <nav class="sidebar animated" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="#" class="logo"><img src="/assets/img/logo_banner_sidebar.png" width="100%" class="ae-1 fromTopRight" border="0"></a>
+    <a href="#realestatemenu" class="logo"><img src="/REMlogo.png" width="25%" class="ae-1 fromTopRight" border="0"></a>
     <ul class="mainMenu margin-top-3 ae-2 fromRight">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -258,7 +258,7 @@
             <li class="col-6-12 left">
               <h1 class="ae-2 fromRight">About Real Estate Menu</h1>
               <p class="ae-3 fromRight">Real Estate Menu's selection of services is as broad as it's director Mark’s experience and knowledge. All delivered in an easy to understand and applicable way.</p>
-              <a class="button black uppercase small crop ae-4 fromCenter dialogTrigger" data-dialog-id="aboutpanel">Learn More</a>
+              <a class="button black uppercase small crop ae-4 fromCenter popupTrigger" data-popup-id="aboutpanel">Learn More</a>
             </li>
           </ul>
         </div>
@@ -267,23 +267,20 @@
     </div>
   </div>
 </section>
-
-
-<!-- About REM -->
-	<div class="dialog hidden bottom black" data-dialog-id="aboutpanel">
-		<div class="close" data-dialog-action="close"></div>
-		<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="/about-real-estate-menu.html"></iframe>
-		<div class="dialogContent black">
-			<div class="text left">
-				<strong>Real Estate Menu</strong><br>
-					Training. Coaching. Auctioneering.
-			</div>
-		</div>
-		<ul>
-			<li class="purple" data-href="#services" data-dialog-action="close">Services</li>
-			<li class="black" data-dialog-action="close">Close</li>
-		</ul>
-	</div>
+    
+<!-- About Mark -->
+<div class="popup fullscreen" data-popup-id="aboutpanel">
+  <div class="close button small uppercase black left"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>Close</div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="popupContent embedVideo">
+          <iframe src="/about-real-estate-menu.html" frameborder="0" scrolling="auto" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>    
 
 
 <!-- Services -->

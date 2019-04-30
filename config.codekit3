@@ -435,6 +435,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/REMlogo.png": {
+		"ft": 32768,
+		"iS": 79379,
+		"oA": 0,
+		"oAP": "/REMlogo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/REMlogo_home.png": {
+		"ft": 32768,
+		"iS": 78998,
+		"oA": 0,
+		"oAP": "/REMlogo_home.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/REMlogo_transparent.png": {
 		"ft": 32768,
 		"iS": 110629,
