@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body>
+<script src="https://unpkg.com/tripetto-collector"></script>
+<script src="https://unpkg.com/tripetto-collector-rolling"></script>
+<script src="https://unpkg.com/tripetto-services"></script>
+<script>
+TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiUFdVVGZJQU5zMW53am5rMzVra0ppMzdoeWVjL0hoalpuOFVWeUF6SlYrOD0iLCJkZWZpbml0aW9uIjoibEwranFtYS9uLzc3TUcyUkU1ODVPaDRSYzR5Z0g3UkRLeHUzTTljYjdrWT0iLCJ0eXBlIjoiY29sbGVjdCJ9.nriRI2dYH1fOLBo7TFC8TKzBUmYf--2LdfObUVBGJro" });
+
+TripettoCollectorRolling.run({
+    element: document.body,
+    definition: TripettoServices.definition,
+    onFinish: TripettoServices.onFinish
+});
+</script>
+</body>
+</html>
