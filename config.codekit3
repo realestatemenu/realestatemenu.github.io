@@ -25,39 +25,6 @@
 		"oAP": "/ajax-email.php",
 		"oF": 0
 		},
-	"/android-chrome-192x192.png": {
-		"ft": 32768,
-		"iS": 10535,
-		"oA": 0,
-		"oAP": "/android-chrome-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/android-chrome-512x512.png": {
-		"ft": 32768,
-		"iS": 33234,
-		"oA": 0,
-		"oAP": "/android-chrome-512x512.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/apple-touch-icon.png": {
-		"ft": 32768,
-		"iS": 10178,
-		"oA": 0,
-		"oAP": "/apple-touch-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/assets/img/background/rem.jpg": {
 		"ft": 16384,
 		"iS": 6060544,
@@ -252,14 +219,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/browserconfig.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/browserconfig.xml",
-		"oF": 0
-		},
 	"/contact-rem.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -327,36 +286,6 @@
 		"oAP": "/css/swiper.min-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/favicon-16x16.png": {
-		"ft": 32768,
-		"iS": 1396,
-		"oA": 0,
-		"oAP": "/favicon-16x16.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 2106,
-		"oA": 0,
-		"oAP": "/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/favicon.ico",
-		"oF": 0
 		},
 	"/index.html": {
 		"cB": 0,
@@ -432,17 +361,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/mstile-150x150.png": {
-		"ft": 32768,
-		"iS": 10652,
-		"oA": 0,
-		"oAP": "/mstile-150x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/REMlogo.png": {
 		"ft": 32768,
 		"iS": 79379,
@@ -486,16 +404,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/safari-pinned-tab.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/safari-pinned-tab.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"/scss/colors.scss": {
 		"aP": 0,
@@ -675,14 +583,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/site.webmanifest": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/site.webmanifest",
-		"oF": 0
 		}
 	},
 "hooks": [
