@@ -74,6 +74,15 @@
 });
 </script>
     
+<script src="https://cdn.rawgit.com/pupunzi/jquery.mb.YTPlayer/9afc0466/dist/jquery.mb.YTPlayer.min.js"></script>
+<script>
+  $(function(){
+    if (!window.isMobile) {
+      $(".background.youtube").mb_YTPlayer();
+    }
+  });
+</script>    
+    
 <!-- Fonts and Material Icons -->
 	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
 	</head>
@@ -482,25 +491,6 @@
   <div class="background" style="background-image:url(assets/img/background/rem1.jpg)"></div>     
 </section>
 
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="88-5">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://www.youtube.com/embed/FZpOFxfj8oY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
 <!-- Blog -->
 <section data-name="blog" data-title="Blog" class="slide deepPurple">
   <div class="content">
@@ -543,25 +533,8 @@
       </div>
     </div>
   </div>
+<div class="background youtube opacity-3" style="background-image:url(https://img.youtube.com/vi/Bh5MASzyNUo/maxresdefault.jpg);" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Bh5MASzyNUo', containment:'self', startAt: 10, stopAt: 100, showControls:false, autoPlay:true, loop:true, mute:true, opacity:1, quality:'highres', stopMovieOnBlur:false, remember_last_time: true}"></div>    
 </section>
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="89-6">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://www.youtube.com/embed/FZpOFxfj8oY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 <!-- Contact -->
 <section data-name="contact" data-title="Contact" class="slide whiteSlide">
