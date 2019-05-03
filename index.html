@@ -379,9 +379,32 @@ function AweformOpen(e) {
     <iframe src="https://player.vimeo.com/video/333708501?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div> 
 </section>
+    
+<style>
+  .slideshow .background {
+     opacity:0;
+     visibility:hidden;
+     -webkit-transition:1s;
+     transition:1s;
+  }
+  .slideshow .background.shown {
+     opacity:1;
+     visibility:visible;
+  }
+</style>
+
+<script>
+  $(function(){
+    setInterval(function(){
+      if($('.slideshow').hasClass('selected')){
+        $('.slideshow.selected .background.shown').removeClass('shown').nextOrFirst('.background').addClass('shown');
+      }
+    },5000); //
+  });
+</script>    
 
 <!-- Auctioneering -->
-<section data-name="auctioneering" data-title="Auctioneering" class="slide red">
+<section data-name="auctioneering" data-title="Auctioneering" class="slide slideshow fade">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -412,30 +435,12 @@ function AweformOpen(e) {
       </div>
     </div>
   </div>
+<div class="background shown" style="background-image:url(assets/img/background/REMscene.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/REMscene2.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/REMscene3.jpg)"></div> 
+  <div class="background" style="background-image:url(assets/img/background/REMscene4.jpg)"></div> 
 </section>
-    
-<style>
-  .slideshow .background {
-     opacity:0;
-     visibility:hidden;
-     -webkit-transition:1s;
-     transition:1s;
-  }
-  .slideshow .background.shown {
-     opacity:1;
-     visibility:visible;
-  }
-</style>
-
-<script>
-  $(function(){
-    setInterval(function(){
-      if($('.slideshow').hasClass('selected')){
-        $('.slideshow.selected .background.shown').removeClass('shown').nextOrFirst('.background').addClass('shown');
-      }
-    },5000); // <-- set your interval here
-  });
-</script>    
+        
 
 <!-- Just some tips -->
 <section data-name="tips" data-title="Tips" class="slide slideshow deepPurple fade">
