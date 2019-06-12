@@ -223,20 +223,127 @@
   }
 </style>
     
+<style>
+  .slide-8 {
+    color: #6A348E;
+    background-color: #FB73BD
+  }
+  .slide-8 .link {
+    color: #eeff24;
+    position: relative;
+    -webkit-box-shadow: 0 2px rgba(238,255,36,0.5);
+    box-shadow: 0 2px rgba(238,255,36,0.5)
+  }
+  @media (min-width: 1024px) {
+    .slide-8 .image {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -18%;
+      z-index: -1
+    }
+  }
+  .slide-8:not(.animate) .styles-images ul>li .style-imgs {
+    -webkit-transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0
+  }
+  .slide-8 .styles-images ul>li {
+    position: relative
+  }
+  .slide-8 .styles-images ul>li .style-imgs {
+    position: absolute;
+    -webkit-transition: 0.5s .35s;
+    transition: 0.5s .35s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition-timing-function: cubic-bezier(0.38, 1.43, 0.51, 1);
+    transition-timing-function: cubic-bezier(0.38, 1.43, 0.51, 1)
+  }
+  @media (min-width:  1024px) {
+    .slide-8 .styles-images ul>li .image-1 {
+      -webkit-box-shadow: 9px 63px 41px rgba(0,0,0,0.3);
+      box-shadow: 9px 63px 41px rgba(0,0,0,0.3);
+      max-width: none;
+      border-radius: 6px;
+      z-index: 100;
+      margin-top: 50%;
+      -webkit-transition-delay: 0.45s;
+      transition-delay: 0.45s;
+      -webkit-transform: translateX(-50%) rotate(-4deg);
+      transform: translateX(-50%) rotate(-4deg)
+    }
+    .slide-8 .styles-images ul>li .image-2 {
+      max-width: none;
+      margin-top: 100%;
+      z-index: 10;
+      border-radius: 7px;
+      -webkit-box-shadow: 7px 44px 36px rgba(0,0,0,0.3);
+      box-shadow: 7px 44px 36px rgba(0,0,0,0.3);
+      -webkit-transition-delay: 0.55s;
+      transition-delay: 0.55s;
+      -webkit-transform: translateX(-50%) rotate(-2deg);
+      transform: translateX(-50%) rotate(-2deg)
+    }
+    .slide-8 .styles-images ul>li .image-3 {
+      max-width: none;
+      z-index: 1000;
+      border-radius: 8px;
+      -webkit-box-shadow: 9px 123px 71px rgba(0,0,0,0.3);
+      box-shadow: 9px 123px 71px rgba(0,0,0,0.3)
+    }
+    .slide-8 .styles-images ul>li .image-4 {
+      max-width: none;
+      margin-top: 90%;
+      z-index: 10;
+      border-radius: 7px;
+      -webkit-box-shadow: 7px 30px 30px rgba(0,0,0,0.3);
+      box-shadow: 7px 30px 30px rgba(0,0,0,0.3);
+      -webkit-transition-delay: 0.65s;
+      transition-delay: 0.65s;
+      -webkit-transform: translateX(-50%) rotate(2deg);
+      transform: translateX(-50%) rotate(2deg)
+    }
+    .slide-8 .styles-images ul>li .image-5 {
+      -webkit-box-shadow: 9px 83px 71px rgba(0,0,0,0.3);
+      box-shadow: 9px 83px 71px rgba(0,0,0,0.3);
+      max-width: none;
+      border-radius: 6px;
+      z-index: 100;
+      margin-top: 60%;
+      -webkit-transition-delay: 0.55s;
+      transition-delay: 0.55s;
+      -webkit-transform: translateX(-50%) rotate(4deg);
+      transform: translateX(-50%) rotate(4deg)
+    }
+  }
+</style>    
+    
 <!-- Real Estate Menu -->
-<section data-name="realestatemenu" data-title="Real Estate Menu" class="slide white">
+<section class="slide fade-gradient slide-8" data-name="home" data-title="Real Estate Menu" style="background-image:url(/assets/img/bg-8.png)">
   <div class="content">
     <div class="container">
-        <div class="wrap ae-1 fromCenter">
-          <div class="fix-3-12">
-          <img src="/REMlogo_home.png" border="0">
+      <div class="wrap">
+
+        <div class="fix-12-12">
+          <img class="ae-3 fadeIn showForTablet margin-bottom-3 toCenter" style="display: none" alt="Real Estate Menu - Training, Coaching and Auctioneering" src="/assets/img/img-8.png"/>
+            <h1 class="ae-1 huge hideForTablet"><img src="/REMlogo_home.png" width="20%"></h1>
         </div>
+
+        <div class="fix-10-12 styles-images margin-top-4 hideForTablet">
+          <ul class="flex noSpaces">
+            <li class="col-2-10"><img class="style-imgs image-1" width="180" alt="Training" src="/assets/img/img-8-monospace.jpg"/></li>
+            <li class="col-2-10"><img class="style-imgs image-2" width="240" alt="Mark Frater" src="/assets/img/img-8-rounded.jpg"/></li>
+            <li class="col-2-10"><img class="style-imgs image-3" width="268" alt="Coaching" src="/assets/img/img-8-default.jpg"/></li>
+            <li class="col-2-10"><img class="style-imgs image-4" width="224" alt="Mark Frater" src="/assets/img/img-8-geometric.jpg"/></li>
+            <li class="col-2-10"><img class="style-imgs image-5" width="180" alt="Auctioneering" src="/assets/img/img-8-elegant.jpg"/></li>
+          </ul>
+        </div>
+
+        <img class="image margin-top-3 ae-3 fadeIn hideForTablet" width="867" alt="Premade Styles" src="/assets/img/img-8@1x.png" srcset="/assets/img/img-8@1x.png 1x, /assets/img/img-8@2x.png 2x"/>
+
       </div>
     </div>
   </div>
-<div class="background vimeo">
-    <iframe src="https://player.vimeo.com/video/328137651?autoplay=1&loop=0&title=0&byline=0&portrait=0&background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>    
 </section>
 
 <!-- About -->
@@ -487,9 +594,9 @@
 
         <div class="fix-12-12">
           <ul class="flex later margin-top-6 left">
-            <li class="col-6-12 box-88 opacity-6">
+            <li class="col-6-12 box-88 opacity-8">
               <div class="quoteBubble ae-4 fromLeft">
-                <p class="cropBottom light opacity-8">What is your true value that sets you apart?</p>
+                <p class="cropBottom light opacity-9">What is your true value that sets you apart?</p>
               </div>
               <p class="margin-top-3 tiny ae-6 fromRight"><strong>Mark Frater</strong> <span class="opacity-7">Director, Real Estate Menu</span></p>
             </li>
@@ -588,16 +695,12 @@
           <ul class="grid equal fixedSpaces margin-top-3">
             <li class="col-4-12 ae-3">
               <div class="fix-3-12 equalElement">
-                <h6 class="uppercase opacity-4 margin-top-3 margin-bottom-2">MAIL</h6>
-                <p class="tiny"><a class="opacity-8" href="#">PO Box 938, Aspley, QLD 4034</a></p>
-                </div>
-            </li>
-            <li class="col-4-12 ae-4">
-              <div class="fix-3-12 equalElement">
                 <h6 class="uppercase opacity-4 margin-top-3 margin-bottom-2">Enquiries</h6>
                 <p class="tiny"><span class="AweformOpenButton button black uppercase small rounded crop" aweformId="451731921320280065" aweformMode="popUp" onclick="AweformOpen(this)"><i class="material-icons small">email</i>EMAIL</span>
               </div>
-                <div class="fix-3-12 equalElement">
+            </li>
+            <li class="col-4-12 ae-4">
+              <div class="fix-3-12 equalElement">
                 <h6 class="uppercase opacity-4 margin-top-3 margin-bottom-2">Stay in touch</h6>
                 <ul class="social-circles">
                   <li><a class="social-googlePlus" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></a></li>
@@ -610,8 +713,8 @@
             </li>
             <li class="col-4-12 ae-5">
               <div class="fix-3-12 equalElement">
-                <h6 class="uppercase opacity-4 margin-top-3 margin-bottom-2">Our blog</h6>
-                <p class="tiny"><a class="opacity-8" href="#">Trend Breakdown: New Ways to Sell Property</a></p>
+                  <h6 class="uppercase opacity-4 margin-top-3 margin-bottom-2">Call Now</h6>
+                <p class="tiny"><span class="button black uppercase small rounded crop dropdownTrigger" data-dropdown-id="telephone"><i class="material-icons small">call</i>Call</span></p>
               </div>
             </li>
           </ul>
@@ -622,6 +725,11 @@
   </div>
 
 </section>
+    
+<!-- Phone Number Reveal -->
+<div class="dropdown padding-1 bottom center" data-dropdown-id="telephone" style="width:200px">
+  <div class="title center"><a href="tel:0411197246‬">0411 197 246‬</a></div>
+</div>     
     
 <!-- Podcast Player -->    
 	<div class="dialog hidden left bottom transparent" data-dialog-id="podcastplayer">
